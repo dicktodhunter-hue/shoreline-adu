@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shoreline ADU Builders | Backyard Cottages & DADUs | Shoreline Washington</title>
+<meta name="description" content="Shoreline's premier ADU builders. Add $200k+ in property value and earn $2,200–$2,800/month. Custom DADUs for Shoreline homeowners. Free feasibility assessment.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2a3a;--navy-mid:#243547;--navy-light:#2d4a60;--gold:#b8902a;--gold-light:#d4a840;--cream:#f5f2ec;--linen:#ede8e0;--slate:#6b7a8a;--white:#ffffff}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--navy);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,42,58,0.97);backdrop-filter:blur(8px);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;border-bottom:1px solid rgba(184,144,42,0.3)}
+.nav-brand{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--cream);display:flex;flex-direction:column;line-height:1.2}
+.nav-brand span{color:var(--gold-light)}
+.nav-brand small{font-size:10px;font-weight:400;color:rgba(245,242,236,0.5);letter-spacing:0.08em;font-family:'Source Sans 3',sans-serif}
+.nav-phone{font-size:15px;font-weight:600;color:var(--gold-light);text-decoration:none}
+.hero{min-height:100vh;background:linear-gradient(150deg,var(--navy) 0%,var(--navy-mid) 55%,var(--navy-light) 100%);display:flex;align-items:center;padding:100px 2rem 60px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 65% 40%,rgba(184,144,42,0.12) 0%,transparent 60%)}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,transparent,var(--cream))}
+.hero-inner{max-width:900px;margin:0 auto;position:relative;z-index:1}
+.hero-eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);background:rgba(184,144,42,0.15);border:1px solid rgba(184,144,42,0.4);padding:6px 16px;border-radius:100px;margin-bottom:28px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,5.5vw,68px);font-weight:900;line-height:1.1;color:var(--cream);margin-bottom:24px}
+.hero h1 em{color:var(--gold-light);font-style:normal}
+.hero-sub{font-size:clamp(16px,2vw,19px);color:rgba(245,242,236,0.75);line-height:1.75;max-width:620px;margin-bottom:40px}
+.hero-stats{display:flex;gap:32px;flex-wrap:wrap;margin-bottom:44px}
+.hero-stat{border-left:3px solid var(--gold);padding-left:16px}
+.hero-stat .num{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--gold-light);display:block}
+.hero-stat .lbl{font-size:13px;color:rgba(245,242,236,0.6)}
+.hero-cta{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--white);padding:16px 36px;border-radius:4px;font-size:16px;font-weight:700;text-decoration:none;transition:background 0.2s,transform 0.2s}
+.hero-cta:hover{background:var(--gold-light);transform:translateY(-2px)}
+.section{padding:80px 2rem}
+.section-inner{max-width:900px;margin:0 auto}
+.section-label{font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,46px);font-weight:700;color:var(--navy);margin-bottom:20px;line-height:1.15}
+.section-body{font-size:17px;line-height:1.8;color:#2d3d4d;max-width:680px;margin-bottom:48px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-bottom:48px}
+.card{background:var(--white);border:1px solid var(--linen);border-radius:8px;padding:28px;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light))}
+.card .card-num{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:8px}
+.card .card-label{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.card .card-desc{font-size:13px;color:var(--slate);line-height:1.6}
+.how-it-works{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px}
+.how-steps{display:flex;flex-direction:column;gap:24px}
+.how-step{display:flex;gap:20px;align-items:flex-start}
+.how-step .step-num{width:44px;height:44px;border-radius:50%;background:var(--navy);color:var(--gold-light);font-family:'Playfair Display',serif;font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.how-step .step-content h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.how-step .step-content p{font-size:14px;color:var(--slate);line-height:1.6}
+.how-image{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);border-radius:12px;padding:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:320px;text-align:center;border:1px solid rgba(184,144,42,0.2)}
+.how-image .img-icon{font-size:64px;margin-bottom:16px}
+.how-image h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:8px}
+.how-image p{font-size:14px;color:rgba(245,242,236,0.65);line-height:1.6}
+.ebook-section{background:var(--linen);padding:80px 2rem}
+.ebook-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.ebook-cover{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:40px 32px;text-align:center;box-shadow:0 20px 60px rgba(26,42,58,0.3);border:1px solid rgba(184,144,42,0.2)}
+.ebook-badge{display:inline-block;background:var(--gold);color:var(--white);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border-radius:4px;margin-bottom:16px}
+.ebook-cover h3{font-family:'Playfair Display',serif;font-size:20px;color:var(--cream);line-height:1.3;margin-bottom:8px}
+.ebook-sub{font-size:13px;color:rgba(245,242,236,0.6);margin-bottom:16px}
+.ebook-price{font-family:'Playfair Display',serif;font-size:15px;color:var(--gold-light)}
+.ebook-content h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);color:var(--navy);margin-bottom:16px;line-height:1.2}
+.ebook-desc{font-size:16px;color:#2d3d4d;line-height:1.7;margin-bottom:24px}
+.chapter-list{list-style:none;margin-bottom:28px}
+.chapter-list li{font-size:14px;color:var(--slate);padding:8px 0;border-bottom:1px solid rgba(26,42,58,0.08);display:flex;gap:10px;align-items:center}
+.chapter-list li::before{content:'→';color:var(--gold);font-weight:700;flex-shrink:0}
+.ebook-cta{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--white);padding:14px 28px;border-radius:4px;font-size:15px;font-weight:700;text-decoration:none;transition:background 0.2s}
+.ebook-cta:hover{background:var(--gold-light)}
+.data-table{width:100%;border-collapse:collapse;background:var(--white);border-radius:8px;overflow:hidden;box-shadow:0 2px 20px rgba(26,42,58,0.08);margin-top:36px}
+.data-table th{background:var(--navy);color:var(--cream);padding:14px 20px;text-align:left;font-size:13px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase}
+.data-table td{padding:16px 20px;border-bottom:1px solid var(--linen);font-size:15px}
+.data-table tr:last-child td{border-bottom:none}
+.data-table tr:nth-child(even) td{background:#faf8f3}
+.data-table .hi{color:var(--gold);font-weight:700}
+.contact-section{background:var(--navy);padding:80px 2rem}
+.contact-inner{max-width:680px;margin:0 auto;text-align:center}
+.contact-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--cream);margin-bottom:16px;line-height:1.15}
+.contact-body{color:rgba(245,242,236,0.7);margin:0 auto 40px;font-size:17px;line-height:1.8}
+.contact-box{background:rgba(255,255,255,0.06);border:1px solid rgba(184,144,42,0.35);border-radius:12px;padding:40px}
+.field{width:100%;padding:14px 18px;background:rgba(255,255,255,0.08);border:1px solid rgba(184,144,42,0.25);border-radius:6px;color:var(--cream);font-size:15px;font-family:'Source Sans 3',sans-serif;margin-bottom:16px;outline:none;transition:border-color 0.2s}
+.field:focus{border-color:var(--gold)}
+.field::placeholder{color:rgba(245,242,236,0.4)}
+.submit{width:100%;padding:16px;background:var(--gold);color:var(--white);border:none;border-radius:6px;font-size:16px;font-weight:700;font-family:'Source Sans 3',sans-serif;cursor:pointer;transition:background 0.2s}
+.submit:hover{background:var(--gold-light)}
+.after-submit{margin-top:20px;padding:16px;background:rgba(184,144,42,0.1);border:1px solid rgba(184,144,42,0.3);border-radius:6px;font-size:14px;color:rgba(245,242,236,0.75);line-height:1.6;display:none}
+.phone-row{margin-top:24px;font-size:14px;color:rgba(245,242,236,0.5)}
+.phone-row a{color:var(--gold-light);text-decoration:none;font-weight:600}
+footer{background:#0f1a24;padding:32px 2rem;text-align:center;font-size:13px;color:rgba(245,242,236,0.35);line-height:1.8}
+footer a{color:rgba(245,242,236,0.45);text-decoration:none}
+footer .tms-brand{color:var(--gold-light);font-weight:600}
+@media(max-width:768px){.how-it-works{grid-template-columns:1fr}.ebook-inner{grid-template-columns:1fr}}
+@media(max-width:600px){.hero-stats{gap:20px}.contact-box{padding:24px 20px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-brand">Today's ADU Builders — <span>Shoreline</span><small>POWERED BY TODAY'S MARKETING STRATEGIES LLC</small></div>
+  <a class="nav-phone" href="tel:+12062587315">📞 (206) 258-7315</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Shoreline · Richmond Beach · Innis Arden · Echo Lake</div>
+    <h1>Shoreline Homeowners:
+North Seattle Demand
+Drives $2,800/Month</h1>
+    <p class="hero-sub">Shoreline's proximity to Seattle's tech corridor and the University of Washington makes it one of the strongest ADU rental markets north of Seattle. Add a custom backyard cottage and tap into premium rental demand.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">$2,800</span><span class="lbl">Top Monthly ADU Rent</span></div>
+      <div class="hero-stat"><span class="num">$200k+</span><span class="lbl">Added Property Value</span></div>
+      <div class="hero-stat"><span class="num">2–4 mo</span><span class="lbl">Permit Timeline</span></div>
+    </div>
+    <a class="hero-cta" href="#contact">Get My Free Feasibility Assessment →</a>
+  </div>
+</section>
+
+<section class="section" style="background:var(--cream)">
+  <div class="section-inner">
+    <p class="section-label">The Shoreline Advantage</p>
+    <h2 class="section-title">Shoreline's North Seattle Premium Drives Strong ADU Returns</h2>
+    <p class="section-body">Shoreline combines suburban space with easy access to Seattle's job centers. UW faculty, Amazon employees, and tech professionals all seek quality housing in Shoreline's established neighborhoods.</p>
+    <div class="card-grid">
+      <div class="card"><div class="card-num">$750k+</div><div class="card-label">Median Home Value</div><div class="card-desc">Premium market means strong ADU returns and maximum equity upside at sale.</div></div>
+      <div class="card"><div class="card-num">$2,800</div><div class="card-label">Top Monthly ADU Rent</div><div class="card-desc">UW faculty, Seattle tech workers, and professionals drive strong ADU rental demand in Shoreline.</div></div>
+      <div class="card"><div class="card-num">$200k+</div><div class="card-label">Added Property Value</div><div class="card-desc">A quality ADU adds significant equity — often more than the cost to build.</div></div>
+      <div class="card"><div class="card-num">HB 1337</div><div class="card-label">2 ADUs Now Allowed</div><div class="card-desc">Washington law requires Shoreline to allow two ADUs per lot — no owner-occupancy required.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--cream)">
+  <div class="section-inner">
+    <p class="section-label">How It Works</p>
+    <h2 class="section-title">From Idea to $2,800/Month in Four Steps</h2>
+    <div class="how-it-works">
+      <div class="how-steps">
+        <div class="how-step"><div class="step-num">1</div><div class="step-content"><h3>Free Feasibility Assessment</h3><p>We evaluate your Shoreline property — setbacks, utilities, zoning — at zero cost to you.</p></div></div>
+        <div class="how-step"><div class="step-num">2</div><div class="step-content"><h3>Custom Design</h3><p>Our team designs an ADU built specifically for your lot and local market.</p></div></div>
+        <div class="how-step"><div class="step-num">3</div><div class="step-content"><h3>Permits & Build</h3><p>We handle all Shoreline permits and construction from start to finish.</p></div></div>
+        <div class="how-step"><div class="step-num">4</div><div class="step-content"><h3>Collect Your Income</h3><p>Your ADU is leased to a quality tenant. Fully passive income every month.</p></div></div>
+      </div>
+      <div class="how-image">
+        <div class="img-icon">🏡</div>
+        <h3>Your Shoreline ADU</h3>
+        <p>Custom designed for your lot — quality construction built to maximize rental income and property value from day one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ebook-section">
+  <div class="ebook-inner">
+    <div class="ebook-cover">
+      <div class="ebook-badge">Free Download</div>
+      <h3>The ADU Playbook: How Shoreline Homeowners Are Earning $2,800/Month From Their Backyard</h3>
+      <div class="ebook-sub">14 Chapters · Complete Guide · Instant Download</div>
+      <div class="ebook-price">Valued at $47 — Yours Free</div>
+    </div>
+    <div class="ebook-content">
+      <h2>Get the Free ADU Playbook</h2>
+      <p class="ebook-desc">Everything you need to know about building an ADU in Shoreline — from zoning to design to finding your first tenant.</p>
+      <ul class="chapter-list">
+        <li>Why Shoreline ADUs Are a Top Passive Income Play</li>
+        <li>Are You Ready? The 3-Step Feasibility Check</li>
+        <li>Maximizing Space, Style & Functionality</li>
+        <li>Turning Your ADU Into a Cash Machine</li>
+        <li>Navigating Shoreline Zoning & Permitting</li>
+        <li>HB 1337 — What the New Law Means for You</li>
+        <li>Design Strategies for Shoreline Lots</li>
+        <li>Finding & Keeping High-Quality Tenants</li>
+        <li>What to Avoid — Common Costly Mistakes</li>
+      </ul>
+      <a class="ebook-cta" href="#contact">Get My Free Copy →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--linen)">
+  <div class="section-inner">
+    <p class="section-label">Market Data</p>
+    <h2 class="section-title">Why Shoreline Homeowners Are Acting Now</h2>
+    <table class="data-table">
+      <thead><tr><th>Metric</th><th>Shoreline</th><th>Why It Matters</th></tr></thead>
+      <tbody>
+        <tr><td>Median Home Value</td><td class="hi">$750k+</td><td>Strong equity base makes ADU a solid investment</td></tr>
+        <tr><td>Key Employers</td><td class="hi">UW, Seattle Tech Corridor</td><td>Steady professional rental demand year-round</td></tr>
+        <tr><td>Average ADU Rent</td><td class="hi">$2,200–$2,800/mo</td><td>Strong returns relative to construction cost</td></tr>
+        <tr><td>Annual Rental Income</td><td class="hi">$26,400–$33,600</td><td>Fully passive once built and leased</td></tr>
+        <tr><td>Permit Timeline</td><td class="hi">2–4 mo</td><td>Clear local ADU permitting process</td></tr>
+        <tr><td>ADUs Allowed Per Lot</td><td class="hi">2 (HB 1337)</td><td>Double your income on the same property</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <p class="section-label" style="color:var(--gold-light)">Free Assessment + Free eBook</p>
+    <h2 class="contact-title">Find Out What Your Shoreline Property Qualifies For</h2>
+    <p class="contact-body">Takes 60 seconds. No obligation. We'll tell you exactly what's possible on your property — and send your free ADU Playbook instantly.</p>
+    <div class="contact-box">
+      <input class="field" type="text" placeholder="Your Name">
+      <input class="field" type="tel" placeholder="Best Phone Number">
+      <input class="field" type="text" placeholder="Your Shoreline Property Address">
+      <input class="field" type="email" placeholder="Email Address (for your free eBook)">
+      <button class="submit" onclick="this.textContent='✓ Request Sent!';this.style.background='#243547';document.querySelector('.after-submit').style.display='block'">Get My Free Shoreline Assessment & ADU Playbook</button>
+      <div class="after-submit">✅ Thank you! One of our Shoreline ADU specialists will call you within 24 hours. Your free ADU Playbook is on its way to your inbox!</div>
+      <div class="phone-row">Prefer to call? <a href="tel:+12062587315">(206) 258-7315</a> · We respond within 24 hours</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Today's ADU Builders — Shoreline · Serving Shoreline, Richmond Beach, Innis Arden FOOTER_AREASamp; Echo Lake</p>
+  <p style="margin-top:8px"><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></p>
+  <p style="margin-top:8px">Powered by <span class="tms-brand">Today's Marketing Strategies LLC</span></p>
+</footer>
+</body>
+</html>
